@@ -57,7 +57,6 @@
 #htid{
     margin-top: 100px;
     margin-left: 150px;
-    background-color: #000000;
     color: rgb(0, 0, 0);
     font-size: larger;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -78,12 +77,10 @@
     padding-right: 9px;
 }
 /*start for css of menu*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Kaushan+Script&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 #menuid{
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-    
 }
 #menuid{
     --Inter: 'Inter', sans-serif;
