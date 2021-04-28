@@ -1,53 +1,245 @@
-#homepage{
-    background:url(/images/homeimg.jpg);
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+#headname{
+    font-family: var(--Mont);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 700px;
     position: relative;
 }
-
 #navbar{
     overflow: hidden;
-    background-color:#91700c;
+    background-color:#146863;
     padding: 50px;
     transition: 0.4s;
     position:fixed;
     width: 100%;
     top: 0;
     left: 0;
-    box-shadow: 0 8px 10px -6px rgb(172, 142, 47);
+    box-shadow: 0 8px 10px -6px #33817b;
+    z-index: 999;
 }
 #navbar a{
-    margin-left: 70px;
     border-radius: 5px;
     padding: 6px;
     color: white;
+    margin-left: 50px;
     text-decoration: none;
     text-align: center;
     font-size: large;
     background-color: none;
+    box-shadow: 0 8px 10px -6px #6cc5be;
     transition: 0.4s;
 }
 #navbar a:hover{
-    padding:8px;
-    background-color:#b59157;
+    padding: 15px;
+    background-color:#020303;
 }
 
 #w2r{
     width: 700px;
     height: 300px;
     padding: 6px;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: 70px;
-    background-color: cornsilk;
     border-radius: 20px;
-    transition: 1s;
+    transition: 2s;
+    color: white;
+    font-size: 20px;
 }
 #w2r h1{
+    display: block;
     margin-left: 75px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:large;
-    font-weight: 500en;
-    color:darkslateblue;
+    font-family: 'Amatic SC', cursive;
+    font-size:60px;
+    color:#66FCF1;
+}
+/*css for health tips*/
+#htid{
+    margin-top: 100px;
+    margin-left: 150px;
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#healthtips > h1{
+    text-align: center;
+}
+#healthtips{
+    width: 800px;
+    padding: 20px;
+    background-color: rgb(84, 147, 155);
+}
+.tips{
+    background-color: lavender;
+    font-family: cursive;
+    border-radius: 20px;    
+    padding-left: 9px;
+    padding-right: 9px;
+}
+/*start for css of menu*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Kaushan+Script&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+#menuid{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    
+}
+#menuid{
+    --Inter: 'Inter', sans-serif;
+    --Kaushan: 'Kaushan Script', cursive;
+    --Mont: 'Montserrat', sans-serif;
+    margin-top: 130px;
+    line-height: 1.5;
+    font-family: var(--Mont);
+    background-color: #44355b;
+    color: #fff;
+}
+.menu{
+    margin: 2rem 0;
+}
+.menu-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.menu-head{
+    text-align: center;
+}
+.menu-head h2{
+    font-family: var(--Kaushan);
+    font-size: 2.6rem;
+}
+.menu-head p{
+    font-weight: 300;
+    padding: 1.8rem 0;
+}
+.menu-btns{
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+}
+.menu-btn{
+    font-family: var(--Inter);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: #ff9505;
+    display: block;
+    margin: 0 1rem;
+    cursor: pointer;
+    outline: 0;
+    transition: opacity 0.4s ease-out;
+}
+.menu-btn::after{
+    content: "";
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ff9505;
+    margin-top: 0.5rem;
+    width: 0;
+    transition: width 0.4s ease-out;
+}
+.menu-btn:hover::after{
+    width: 100%;
+}
+.menu-btn:hover{
+    opacity: 0.8;
+}
+.active-btn{
+    color: #fff;
+}
+.food-items{
+    margin: 2rem 0;
+}
+.food-item{
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+    margin: 0.6rem 0;
+    box-shadow: 0 0 16px -4px rgba(0, 0, 0, 0.75);
+    animation: fadeIn 2s;
+    
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.food-img img{
+    border-radius: 4px;
+}
+.food-content{
+    padding: 1rem;
+}
+.food-name{
+    font-family: var(--Inter);
+    color: #ff9505;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.line{
+    width: 100px;
+    height: 3px;
+    background: #ff9505;
+}
+.food-price{
+    padding: 0.4rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
+.category{
+    padding-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: var(--Inter);
+}
+.category span{
+    font-weight: 500;
+}
+
+@media screen and (min-width: 600px){
+    .food-item{
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+        padding: 1rem;
+        column-gap: 1rem;
+    }
+    .food-content{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .menu-head p{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .menu-head p{
+        width: 50%;
+    }
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
 }

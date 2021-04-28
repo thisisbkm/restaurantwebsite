@@ -1,19 +1,292 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Restaurant • Menu</title>
-        <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="healthtips.html">Health Tips</a>
-                <a href="menu.html">Menu</a>
-                <a href="aboutus.html">About Us</a>
-                <a href="contactus.html">Contact Us</a>
-            </nav>
-        </header>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body id="menuid">
+    <div id="navbar">
+      <nav>
+              <a href="index.html">Home</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="healthtips.html">Health Tips</a>
+              <a href="menu.html">Menu</a>
+              <a href="aboutus.html">About Us</a>
+              <a href="contactus.html">Contact Us</a>
+          </nav>
+    </div>
+    <section class = "menu">
+      <div class = "menu-container">
+        <div class = "menu-head">
+          <h2> Food Menu</h2>
+        </div>
+
+        <div class = "menu-btns">
+          <button type = "button" class = "menu-btn active-btn" id = "featured">featured</button>
+          <button type = "button" class = "menu-btn" id = "today-special">today-special</button>
+          <button type = "button" class = "menu-btn" id = "new-arrival">new arrivals</button>
+        </div>
+
+        <div class = "food-items">
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "./images/Dosa B.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Dosa</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price"> RS:75.00</h3>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "./images/1.webp" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Chicken Tandoori</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:420.00</h3>
+              <p class = "category">Categories: <span>today-special</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "./images/7.webp" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Chicken vindaloo </h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:350.00</h3>
+              <p class = "category">Categories: <span>New Arrivals</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "./images/Egg and Omlet B.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Egg and Omlet</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:70.00</h3>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "./images/2.webp" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Butter Chicken</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:450.00</h3>
+               
+              <p class = "category">Categories: <span>today-special</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "./images/8.webp" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Chicken Tikka Masala</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:350.00</h3>
+              <p class = "category">Categories: <span>New Arrivals</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "./images/Idle Sambar B.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Idle Sambar</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:50.00</h3>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "./images/3.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Goan Cuisine</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:500.00</h3>
+              <p class = "category">Categories: <span>today-special</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "./images/paneer.webp" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Paneer Curry</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">Rs:150.00</h3>
+              <p class = "category">Categories: <span>New Arrivals</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "./images/Chole Kulche B.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Chole Kulche B </h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:200.00</h3>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "./images/4.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Mutton Paper Masala</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:650.00</h3>
+              <p class = "category">Categories: <span>Today's Special</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "./images/Bambo biryani.webp" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name"> Bambo biryani</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:410.00</h3>
+              <p class = "category">Categories: <span>New Arrivals</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "./images/Chole Bhature B.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Chole Bhature</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:110.00</h3>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "./images/5.jpeg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">South Indian Cuisine</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:400.00</h3>
+              <p class = "category">Categories: <span>Today's Special</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "./images/Sweet kachori.webp" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Sweet kachori</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:200.00</h3>
+              <p class = "category">Categories: <span>New Arrivals</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item featured">
+            <div class = "food-img">
+              <img src = "./images/Poha B.jpg" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Poha</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:110.00</h3>
+              <p class = "category">Categories: <span>featured</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item today-special">
+            <div class = "food-img">
+              <img src = "./images/6.webp" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Butter Chicken</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:300.00</h3>
+              <p class = "category">Categories: <span>Today's Special</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+
+          <!-- item -->
+          <div class = "food-item new-arrival">
+            <div class = "food-img">
+              <img src = "./images/11.webp" alt = "food image">
+            </div>
+            <div class = "food-content">
+              <h2 class = "food-name">Keema Biryani</h2>
+              <div class = "line"></div>
+              <h3 class = "food-price">RS:360.00</h3>
+              <p class = "category">Categories: <span>New Arrivals</span></p>
+            </div>
+          </div>
+          <!-- end of item -->
+        </div>
+      </div>
+    </section>
+    <script src="./javascript/javas.js"></script>
+  </body>
 </html>
