@@ -7,18 +7,94 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Contact Us</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css" />
+        <script src="./javascript/javas.js"></script>
+        <style>
+            body{
+                background: bisque;
+            }
+            #aa{
+                background: rgb(177, 150, 111);
+                width: 400px;
+                height: 600px;
+                padding: 20px;
+                border-radius: 10px;
+                margin-left: 400px;
+            }
+            #bb{
+                text-align: center;
+            }
+            h1{text-align: center;}
+            #footercu{
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: larger;
+            }
+        </style>
     </head>
-    <body>
+    <body id="contactus">
         <header>
             <nav id="navbar">
                 <div style="margin-left: 180px;">
                     <a href="index.html">Home</a>
-                    <a href="gallery.html">Gallery</a>
                     <a href="healthtips.html">Health Tips</a>
                     <a href="menu.html">Menu</a>
                     <a href="contactus.html">Contact Us</a>
                     </div>
-            </nav>
-        </header>
+            </nav></header>
+<div id="aa">
+    <div id="bb">
+            <h1>Contact Us</h1><br>
+            <form>
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="firstname" placeholder="Your First name.."><br><br>
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lastname"  placeholder="Your last name.."><br><br>
+                Mobile no: <input type="number" placeholder="10 digits number.."><br><br>
+                Email address: <input type="email" placeholder="example@example.com"><br><br>
+
+            <label for="State">State: </label>
+                <select id="State you leave in" name="State you leave in">
+                <option value="State">State</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Ap">Andhra Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana ">Haryana </option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value=" Karnataka"> Karnataka</option>
+                <option value=" Kerala "> Kerala </option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra ">Maharashtra </option>
+                <option value="Manipur ">Manipur </option>
+                <option value="Meghalaya ">Meghalaya </option>
+                <option value="Mizoram ">Mizoram </option>
+                <option value="Nagaland ">Nagaland </option>
+                <option value="Odisha ">Odisha </option>
+                <option value="Punjab ">Punjab </option>
+                <option value="Rajasthan ">Rajasthan </option>
+                <option value="Sikkim ">Sikkim </option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana ">Telangana </option>
+                <option value="Tripura ">Tripura </option>
+                <option value="Uttar Pradesh ">Uttar Pradesh </option>
+                <option value="Uttarakhand ">Uttarakhand </option>
+                <option value="West Bengal">West Bengal</option>
+                </select><br><br>
+
+
+            <label for="Comment">Comment: </label>
+                <textarea id="Comment" name="Comment" placeholder="Write something.." style="height:200px"></textarea><br><br>
+            <input type="submit" value="Submit">
+
+            </form>
+        </div></div>
+<hr>
+<div id="footercu"><p><h6>Contact number: 0866-1324234</h6>
+    <h6>Email address: smilerestaurent@gmail.com</h6><br>
+    </p></div>
     </body>
 </html>
